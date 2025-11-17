@@ -26,7 +26,7 @@ body{
   border-radius: 5px;
   background-color: rgb(204, 155, 250);
   position: absolute;
-  top: 15%;
+  top: 12%;
   transform: translate(-50%);
   font-size: 20px;
   animation: contador 3s infinite alternate;
