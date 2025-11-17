@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function(){
     if (today == true){
       window.location.href = 'carta.html'
     }else{
-      btn.textContent = "Todavia no es el momento"
+      btn.textContent = "🚫 Todavia no es el momento 🚫"
     }
   })
 })
