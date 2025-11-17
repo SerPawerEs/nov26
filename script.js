@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 document.addEventListener('DOMContentLoaded', function(){
   retourn.addEventListener('click', () => {
-    window.location.href = '/'
+    window.location.href = '/nov26'
   })
 })
 
@@ -85,3 +85,4 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
