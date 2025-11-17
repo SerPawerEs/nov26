@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 document.addEventListener('DOMContentLoaded', function(){
   retourn.addEventListener('click', () => {
-    window.location.href = '../'
+    window.location.href = '/'
   })
 })
 
@@ -83,4 +83,5 @@ document.addEventListener('DOMContentLoaded', () => {
     const randomLeft = 5 + Math.random() * 90;
     contenedor6.style.left = randomLeft + '%';
   }
+
 });
