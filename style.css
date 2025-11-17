@@ -2,11 +2,12 @@ body{
     background-color: rgb(252, 185, 249);
     position: static;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container{
     user-select: none;
-    -webkit-user-select: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -15,6 +16,30 @@ body{
     align-items: center;
     justify-content: center;
     
+}
+
+#contador{
+  user-select: none;
+  outline-style: dashed;
+  outline-color: rgb(164, 110, 234);
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(204, 155, 250);
+  position: absolute;
+  top: 15%;
+  transform: translate(-50%);
+  font-size: 20px;
+  animation: contador 3s infinite alternate;
+}
+
+@keyframes contador {
+  0% {
+    transform: translate(-40%);
+  }
+  100% {
+    transform: translate(-60%);
+  }
+  
 }
 
 .msg{
@@ -66,7 +91,7 @@ body{
 
 
 /* Corazón que se balancea dentro del contenedor */
-.cora1 {
+#cora1 {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -78,7 +103,7 @@ body{
   left: 5%;
 }
 
-.cora2 {
+#cora2 {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -90,7 +115,7 @@ body{
   left: 40%;
 }
 
-.cora3 {
+#cora3 {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -102,7 +127,7 @@ body{
   right: 20%;
 }
 
-.cora4 {
+#cora4 {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -114,7 +139,7 @@ body{
   left: 5%;
 }
 
-.cora5 {
+#cora5 {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -126,7 +151,7 @@ body{
   left: 40%;
 }
 
-.cora6 {
+#cora6 {
   width: 30px;
   height: 30px;
   border-radius: 50%;

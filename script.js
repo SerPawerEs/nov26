@@ -1,10 +1,15 @@
 const btn = document.getElementById('btn')
 const card = document.getElementById('card')
-const audio = new Audio('WannaBeYours.mp3');
 const retourn = document.getElementById('retourn')
+const contador = document.getElementById('contador')
+
+const audio = new Audio('WannaBeYours.mp3');
 const hoy = new Date()
 const dia = hoy.getDate()
 const mes = hoy.getMonth()
+const esperado_d = 26
+const esperado_m = 10
+const faltan = esperado_d - dia
 
 function wait(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -12,7 +17,7 @@ function wait(ms) {
 
 document.addEventListener('DOMContentLoaded', function(){
   btn.addEventListener('click', () => {
-    if (dia == 26 && mes == 10){
+    if (dia == esperado_d && mes == esperado_m){
       window.location.href = 'carta.html'
     }else{
       btn.textContent = "🚫 Todavia no es el momento 🚫"
@@ -42,4 +47,18 @@ document.addEventListener('DOMContentLoaded', function(){
       audio.pause()
     }
   })
+})
+
+document.addEventListener('DOMContentLoaded', function(){
+  if (mes == esperado_m){
+    if (faltan != 0) {
+      if (faltan != 1) {
+        contador.innerHTML = `Faltan <strong>${faltan}</strong> días`
+      }else{
+        contador.innerHTML = `Falta <strong>${faltan}</strong> día`
+      }
+    }else{
+      contador.innerHTML = `¡ES HOY!`
+    }
+  }
 })
