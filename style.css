@@ -1,0 +1,176 @@
+body{
+    background-color: rgb(252, 185, 249);
+    position: static;
+    display: flex;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.msg{
+    color: black;
+    outline-color: red;
+    background-color: rgb(230, 160, 237);
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    outline-style: inset;
+    border-radius: 5px;
+    position: relative;
+    margin: 0px;
+    padding: 15px;
+    align-items: center;
+    scale: 0.8;
+    transition: 0.5s;
+}
+
+.msg:hover{
+    outline-color: rgb(224, 64, 249);
+    scale: 0.9;
+}
+
+
+.txt{
+    color: black;
+    outline-color: red;
+    background-color: rgb(230, 160, 237);
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    outline-style: inset;
+    border-radius: 5px;
+    position: relative;
+    margin: 0px;
+    padding: 15px;
+    align-items: center;
+    scale: 0.8;
+    transition: 0.5s;
+    max-height: 400px;
+}
+
+.txt:hover{
+    outline-color: rgb(224, 64, 249);
+    scale: 0.9;
+}
+
+
+
+/* Corazón que se balancea dentro del contenedor */
+.cora1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  animation: balanceoHorizontal 2.8s ease-in-out infinite alternate;
+  transform-origin: center;
+  font-size: 60px;
+  position: absolute;
+  top: 2%;
+  left: 5%;
+}
+
+.cora2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  animation: balanceoHorizontal 2.8s ease-in-out infinite alternate;
+  transform-origin: center;
+  font-size: 60px;
+  position: absolute;
+  top: 0%;
+  left: 40%;
+}
+
+.cora3 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  animation: balanceoHorizontal 2.8s ease-in-out infinite alternate;
+  transform-origin: center;
+  font-size: 60px;
+  position: absolute;
+  top: 2%;
+  right: 20%;
+}
+
+.cora4 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  animation: balanceoHorizontal 2.8s ease-in-out infinite alternate;
+  transform-origin: center;
+  font-size: 60px;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+}
+
+.cora5 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  animation: balanceoHorizontal 2.8s ease-in-out infinite alternate;
+  transform-origin: center;
+  font-size: 60px;
+  position: absolute;
+  bottom: 10%;
+  left: 40%;
+}
+
+.cora6 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  animation: balanceoHorizontal 2.8s ease-in-out infinite alternate;
+  transform-origin: center;
+  font-size: 60px;
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+}
+
+
+/* Animación de balanceo lateral */
+@keyframes balanceoHorizontal {
+  0% {
+    overflow: inherit;
+    transform: translateX(-20px);
+  }
+  100% {
+    overflow: inherit;
+    transform: translateX(20px);
+  }
+}
+
+@media (max-width: 768px) {
+    .txt{
+        color: black;
+        outline-color: red;
+        background-color: rgb(230, 160, 237);
+        font-style: italic;
+        font-size: 30px;
+        text-align: center;
+        outline-style: inset;
+        border-radius: 5px;
+        position: relative;
+        margin: 0px;
+        padding: 15px;
+        align-items: center;
+        scale: 0.8;
+        transition: 0.5s;
+        overflow: scroll;
+        max-height: 400px;
+    }
+
+    .txt:hover{
+        outline-color: rgb(224, 64, 249);
+        scale: 0.9;
+    }
+}
