@@ -2,7 +2,9 @@ const btn = document.getElementById('btn')
 const card = document.getElementById('card')
 const audio = new Audio('WannaBeYours.mp3');
 const retourn = document.getElementById('retourn')
-const today = false
+const hoy = new Date()
+const dia = hoy.getDate()
+const mes = hoy.getMonth()
 
 function wait(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -10,7 +12,7 @@ function wait(ms) {
 
 document.addEventListener('DOMContentLoaded', function(){
   btn.addEventListener('click', () => {
-    if (today == true){
+    if (day == 17 && mes == 10){
       window.location.href = 'carta.html'
     }else{
       btn.textContent = "🚫 Todavia no es el momento 🚫"
