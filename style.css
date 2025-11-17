@@ -5,6 +5,8 @@ body{
 }
 
 .container{
+    user-select: none;
+    -webkit-user-select: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -173,4 +175,5 @@ body{
         outline-color: rgb(224, 64, 249);
         scale: 0.9;
     }
+
 }
