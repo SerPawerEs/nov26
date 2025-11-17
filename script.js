@@ -12,7 +12,7 @@ function wait(ms) {
 
 document.addEventListener('DOMContentLoaded', function(){
   btn.addEventListener('click', () => {
-    if (day == 17 && mes == 10){
+    if (dia == 26 && mes == 10){
       window.location.href = 'carta.html'
     }else{
       btn.textContent = "🚫 Todavia no es el momento 🚫"
