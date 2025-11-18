@@ -1,47 +1,75 @@
+// ID
 const btn = document.getElementById('btn')
 const card = document.getElementById('card')
 const retourn = document.getElementById('retourn')
 const contador = document.getElementById('contador')
-
+const intro = document.getElementById('intro')
+const timer = document.getElementById('timer')
+// Elements
 const audio = new Audio('WannaBeYours.mp3');
-const hoy = new Date()
-const dia = hoy.getDate()
-const mes = hoy.getMonth()
-const esperado_d = 26
-const esperado_m = 10
-const faltan = esperado_d - dia
-const version = '1.0'
+const version = '1.1'
+//MSG
+const text = "Que es lo que no entienes sobre lo mucho que te quiero y te necesito? si confias en mi nunca estarás sola en la vida, no es neceasario que te lastimes ni pienses en nadie más que pueda lastimarte, confia en mi, siempre estaré contigo, nunca te haré daño, solo quiero estar contigo porque te amo, tus abrazos son lo mejor que puedo tener en el mundo. Y mi niña como sabes que realmente luego llegará algo mejor? no odies este mundo, mas bien aseguremos un futuro juntos, solo nosotros sin personas que nos juzguen o nos critiquen, y ya perdi la cuenta de cuantas veces te lo he dicho pero igual te lo recuerdo para que no lo olvides:<br><strong>♥️TE AMO♥️</strong>"
+const txt1 = "<strong>💖¡¡FELIZ CUMPLEAÑOS!!💖</strong><br>Amor, te amo muchooo con toda mi alma, mi vida con todo mi ser, de verdad que te necesito conmigo y sin ti no se que hacer"
+const txt2 = "♥️ Lo que falta para <strong>tu cumple</strong> ♥️"
 
-document.addEventListener('DOMContentLoaded', () => {
-  window.addEventListener('load', () => {
-    console.log(`update: ${version}`)
-  })
-})
-
-function wait(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
+/* Pagina 1 */
 
 document.addEventListener('DOMContentLoaded', function(){
-  btn.addEventListener('click', () => {
+  function TimeUpdate() {
+    //Variables de tiempo
+    const hoy = new Date()
+    const dia = hoy.getDate()
+    const mes = hoy.getMonth()
+    const esperado_d = 26
+    const esperado_m = 10
+
+    const seg = hoy.getSeconds()
+    const min = hoy.getMinutes()
+    const hora = hoy.getHours()
+    const seg_f = 60-seg
+    const min_f = 60-min
+    const hora_f = 24-hora
+    const dia_f = esperado_d - dia
+    const tiempo_faltante = `<br>${dia_f-1} dia(s)<br>${hora_f} horas<br>${min_f} minutos<br>${seg_f} segundos`
+
     if (dia == esperado_d && mes == esperado_m){
-      window.location.href = 'carta.html'
+      contador.innerHTML = `ES HOY!!`
+      intro.innerHTML = txt1
     }else{
-      btn.textContent = "🚫 Todavia no es el momento 🚫"
+      intro.innerHTML = txt2
+      if (mes == esperado_m){
+        if (dia_f != 1) {
+          contador.innerHTML = `Faltan: <strong>${tiempo_faltante}</strong>`
+        }else{
+          contador.innerHTML = `Falta: <strong>${tiempo_faltante}</strong>`
+        }
+      }else{
+        contador.innerHTML = `Meses: ${esperado_m - mes}`
+      }
     }
-  })
+    btn.addEventListener('click', () => {
+      if (dia == esperado_d && mes == esperado_m){
+        window.location.href = 'carta.html'
+      }else{
+        btn.textContent = "🚫 Todavia no es el momento 🚫"
+      }
+    })
+  }
+
+  TimeUpdate()
+  setInterval(TimeUpdate, 1000)
 })
+
+
+/* Pagina 2 */
 
 document.addEventListener('DOMContentLoaded', function(){
   retourn.addEventListener('click', () => {
     window.location.href = '/nov26'
   })
-})
 
-document.addEventListener('DOMContentLoaded', function(){
   card.addEventListener('click', () => {
-
-    const text = "Que es lo que no entienes sobre lo mucho que te quiero y te necesito? si confias en mi nunca estarás sola en la vida, no es neceasario que te lastimes ni pienses en nadie más que pueda lastimarte, confia en mi, siempre estaré contigo, nunca te haré daño, solo quiero estar contigo porque te amo, tus abrazos son lo mejor que puedo tener en el mundo. Y mi niña como sabes que realmente luego llegará algo mejor? no odies este mundo, mas bien aseguremos un futuro juntos, solo nosotros sin personas que nos juzguen o nos critiquen, y ya perdi la cuenta de cuantas veces te lo he dicho pero igual te lo recuerdo para que no lo olvides:<br><strong>♥️TE AMO♥️</strong>"
 
     card.innerHTML = text
     card.className = 'txt'
@@ -54,18 +82,11 @@ document.addEventListener('DOMContentLoaded', function(){
       audio.pause()
     }
   })
+
 })
 
+/* General */
+
 document.addEventListener('DOMContentLoaded', function(){
-  if (mes == esperado_m){
-    if (faltan != 0) {
-      if (faltan != 1) {
-        contador.innerHTML = `Faltan <strong>${faltan}</strong> días`
-      }else{
-        contador.innerHTML = `Falta <strong>${faltan}</strong> día`
-      }
-    }else{
-      contador.innerHTML = `¡ES HOY!`
-    }
-  }
+  console.log(`Update: ${version}`)
 })

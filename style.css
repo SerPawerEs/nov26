@@ -21,7 +21,7 @@ body{
 #contador{
   outline-style: dashed;
   outline-color: rgb(164, 110, 234);
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
   background-color: rgb(204, 155, 250);
   position: absolute;
@@ -29,6 +29,7 @@ body{
   transform: translate(-50%);
   font-size: 20px;
   animation: contador 3s infinite alternate;
+  text-align: center;
 }
 
 @keyframes contador {
