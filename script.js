@@ -10,7 +10,7 @@ const mes = hoy.getMonth()
 const esperado_d = 26
 const esperado_m = 10
 const faltan = esperado_d - dia
-const version = 1.0
+const version = '1.0'
 
 document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
