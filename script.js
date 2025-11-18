@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const min_f = 60-min
     const hora_f = 24-hora
     const dia_f = esperado_d - dia
-    const tiempo_faltante = `<br>${dia_f-1} dia(s)<br>${hora_f} horas<br>${min_f} minutos<br>${seg_f} segundos`
+    const tiempo_faltante = `<br>${dia_f-1} dia(s)<br>${hora_f-1} hora(s)<br>${min_f-1} minutos<br>${seg_f-1} segundos`
 
     if (dia == esperado_d && mes == esperado_m){
       contador.innerHTML = `ES HOY!!`
@@ -89,4 +89,5 @@ document.addEventListener('DOMContentLoaded', function(){
 
 document.addEventListener('DOMContentLoaded', function(){
   console.log(`Update: ${version}`)
+
 })
