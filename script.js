@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function(){
     if (dia == esperado_d && mes == esperado_m){
       contador.innerHTML = `ES HOY!!`
       intro.innerHTML = txt1
+      btn.innerHTML = 'Te tengo un mensajito 📩'
     }else{
       intro.innerHTML = txt2
       if (mes == esperado_m){
@@ -52,11 +53,12 @@ document.addEventListener('DOMContentLoaded', function(){
         }
       }
     }
+
     btn.addEventListener('click', () => {
       if (dia == esperado_d && mes == esperado_m){
         window.location.href = 'carta.html'
       }else{
-        btn.textContent = "🚫 Todavia no es el momento 🚫"
+        btn.innerHTML = '🚫 Todavia no es el momento 🚫'
       }
     })
   }

@@ -9,13 +9,12 @@ body{
 
 .container{
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
     align-items: center;
     justify-content: center;
-    
 }
 
 #contador{
@@ -82,6 +81,7 @@ body{
     scale: 0.8;
     transition: 0.5s;
     max-height: 400px;
+    transform: translate(0, -10%);
 }
 
 .txt:hover{
