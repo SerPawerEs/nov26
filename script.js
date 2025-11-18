@@ -39,13 +39,17 @@ document.addEventListener('DOMContentLoaded', function(){
     }else{
       intro.innerHTML = txt2
       if (mes == esperado_m){
-        if (dia_f != 1) {
-          contador.innerHTML = `Faltan: <strong>${tiempo_faltante}</strong>`
+        if (dia_f > 0) {
+          contador.innerHTML = `Esperando: <strong>${tiempo_faltante}</strong>`
         }else{
-          contador.innerHTML = `Falta: <strong>${tiempo_faltante}</strong>`
+          contador.innerHTML = `Ya pasó disfruta tu mes`
         }
       }else{
-        contador.innerHTML = `Meses: ${esperado_m - mes}`
+        if (esperado_m-mes > 0){
+          contador.innerHTML = `Meses: ${esperado_m - mes}`
+        }else{
+          contador.innerHTML = `Espera al otro año...`
+        }
       }
     }
     btn.addEventListener('click', () => {
