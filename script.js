@@ -7,7 +7,9 @@ const intro = document.getElementById('intro')
 const timer = document.getElementById('timer')
 // Elements
 const audio = new Audio('WannaBeYours.mp3');
-const version = '1.3'
+
+const nombre = 'nov26'
+const version = '1.4'
 //MSG
 const text = "Que es lo que no entienes sobre lo mucho que te quiero y te necesito? si confias en mi nunca estarás sola en la vida, no es neceasario que te lastimes ni pienses en nadie más que pueda lastimarte, confia en mi, siempre estaré contigo, nunca te haré daño, solo quiero estar contigo porque te amo, tus abrazos son lo mejor que puedo tener en el mundo. Y mi niña como sabes que realmente luego llegará algo mejor? no odies este mundo, mas bien aseguremos un futuro juntos, solo nosotros sin personas que nos juzguen o nos critiquen, y ya perdi la cuenta de cuantas veces te lo he dicho pero igual te lo recuerdo para que no lo olvides:<br><strong>♥️TE AMO♥️</strong>"
 const txt1 = "<strong>💖¡¡FELIZ CUMPLEAÑOS!!💖</strong><br>Amor, te amo muchooo con toda mi alma, mi vida con todo mi ser, de verdad que te necesito conmigo y sin ti no se que hacer"
@@ -72,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 document.addEventListener('DOMContentLoaded', function(){
   retourn.addEventListener('click', () => {
-    window.location.href = '/..'
+    window.location.href = `/${nombre}`
   })
 
   card.addEventListener('click', () => {
