@@ -100,7 +100,7 @@ body{
   border-radius: 50%;
   animation: balanceoHorizontal 2.8s ease-in-out infinite alternate;
   transform-origin: center;
-  font-size: 60px;
+  font-size: 40px;
   position: absolute;
   top: 2%;
   left: 5%;
@@ -112,7 +112,7 @@ body{
   border-radius: 50%;
   animation: balanceoHorizontal 2.8s ease-in-out infinite alternate;
   transform-origin: center;
-  font-size: 60px;
+  font-size: 40px;
   position: absolute;
   top: 0%;
   left: 40%;
@@ -124,7 +124,7 @@ body{
   border-radius: 50%;
   animation: balanceoHorizontal 2.8s ease-in-out infinite alternate;
   transform-origin: center;
-  font-size: 60px;
+  font-size: 40px;
   position: absolute;
   top: 2%;
   right: 20%;
@@ -136,7 +136,7 @@ body{
   border-radius: 50%;
   animation: balanceoHorizontal 2.8s ease-in-out infinite alternate;
   transform-origin: center;
-  font-size: 60px;
+  font-size: 40px;
   position: absolute;
   bottom: 10%;
   left: 5%;
@@ -148,7 +148,7 @@ body{
   border-radius: 50%;
   animation: balanceoHorizontal 2.8s ease-in-out infinite alternate;
   transform-origin: center;
-  font-size: 60px;
+  font-size: 40px;
   position: absolute;
   bottom: 10%;
   left: 40%;
@@ -160,7 +160,7 @@ body{
   border-radius: 50%;
   animation: balanceoHorizontal 2.8s ease-in-out infinite alternate;
   transform-origin: center;
-  font-size: 60px;
+  font-size: 40px;
   position: absolute;
   bottom: 10%;
   right: 20%;
