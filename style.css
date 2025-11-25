@@ -81,6 +81,7 @@ body{
     align-items: center;
     scale: 0.8;
     transition: 0.5s;
+    overflow: scroll;
     max-height: 400px;
     transform: translate(0, -10%);
 }
@@ -176,31 +177,4 @@ body{
     overflow: inherit;
     transform: translateX(20px);
   }
-}
-
-@media (max-width: 768px) {
-    .txt{
-        color: black;
-        outline-color: red;
-        background-color: rgb(230, 160, 237);
-        font-style: italic;
-        font-size: 30px;
-        text-align: center;
-        outline-style: inset;
-        border-radius: 5px;
-        position: relative;
-        margin: 0px;
-        padding: 15px;
-        align-items: center;
-        scale: 0.8;
-        transition: 0.5s;
-        overflow: scroll;
-        max-height: 400px;
-    }
-
-    .txt:hover{
-        outline-color: rgb(224, 64, 249);
-        scale: 0.9;
-    }
-
 }
