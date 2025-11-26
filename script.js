@@ -12,7 +12,7 @@ const nombre = 'nov26'
 const version = '1.6'
 //MSG
 const text = "<strong>Feliz cumpleaños mi niña 🌸</strong><br><br>¿Qué es lo que no entiendes sobre lo mucho que te amo y te necesito en mi vida?<br><br>Si confías en mí, nunca estarás sola. No necesitas lastimarte, ni aguantar a quien te haga daño, ni dudar de tu valor. Aquí estoy yo contigo, incondicional.<br><br>Nunca te haré daño. Solo quiero estar a tu lado, porque necesito tu presencia, y tus abrazos son mi lugar favorito en este mundo.<br><br>Y dime… ¿cómo sabes que algo mejor no va a llegar? No odies este mundo. Mejor construyamos juntos un lugar donde seamos nosotros dos, sin juicios, sin críticas, solo nosotros.<br><br>Ya perdí la cuenta de cuántas veces te lo he dicho… pero hoy, en tu cumpleaños, te lo recuerdo una vez más, para que lo guardes en el corazón:<br><br><strong>♥️ TE AMO ♥️</strong><br><br>No como costumbre, no por decirlo…<br>sino porque eres muy importante, y mi vida es mejor contigo en ella.<br><br>Feliz cumpleaños, mi amor."
-const txt1 = "<strong>💖¡¡FELIZ CUMPLEAÑOS!!💖</strong><br>Luna, te amo muchooo con mi alma, de verdad que te necesito conmigo, eres muy imporatnte para mi y sin ti no se que hacer"
+const txt1 = "<strong>💖¡¡FELIZ CUMPLEAÑOS!!💖</strong><br>Luna, te quiero muchooo, eres muy imporatnte para mi y sin ti mi vida no seria igual"
 const txt2 = "♥️ Lo que falta para <strong>tu cumple</strong> ♥️"
 
 /* Pagina 1 */
